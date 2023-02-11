@@ -47,10 +47,12 @@
             <div>
                 <label for="city">Your City Here</label>
                 <input type="text" id="city" name="city">
-                <select name="state" id="state">
-                        <option value="AK">Alaska</option> 
-                        <option value="AL">Alabama</option>
+                <label for="state">Your State</label>
+                <input list="state-list" name="state" id="state">
+                <datalist id="state-list">
                         <option value="AK">Alaska</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Arkanasa</option>
                         <option value="AZ">Arizona</option>
                         <option value="AR">Arkansas</option>
                         <option value="CA">California</option>
@@ -98,7 +100,7 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WV">West Virginia</option>
                         <option value="WY">Wyoming</option>
-                    </select>
+                </datalist>
                 <label for="zip">Your Zip Here</label>
                 <input type="text" pattern="[0-9]{5}" title="5-Digit US ZIP Code" id="zip" name="zip">
             </div>
@@ -134,7 +136,7 @@
                 </div>
                 <h3>Add-ons and Extras</h3>
                 <div>
-                    <input type="checkbox" id="sauna" name="extras" value="Sauna Access">
+                    <input type="checkbox" id="sauna" name="extras" value="Sauna Access" checked>
                     <label for="sauna">Sauna Access</label>
                 </div>
                 <div>
